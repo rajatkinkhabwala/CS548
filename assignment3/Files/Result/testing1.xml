@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatientTreatmentInfo>
+   <DrugName>relpx</DrugName>
+   <PhysicianName>Carie</PhysicianName>
+   <Diagnosis>migraine</Diagnosis>
+   <Dosage>35.0</Dosage>
+</PatientTreatmentInfo>

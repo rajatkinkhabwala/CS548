@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinic:Clinic xmlns:cid="http://www.example.org/schemas/clinic/clinic_ids"
+    xmlns:prov="http://www.example.org/schemas/clinic/provider"
+    xmlns:treat="http://www.example.org/schemas/clinic/treatment"
+    xmlns:pat="http://www.example.org/schemas/clinic/patient"
+    xmlns:clinic="http://www.example.org/schemas/clinic"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/schemas/clinic file:/Applications/Oxygen XML Editor/Oxygen XML Developer.app/Contents/Resources/Clinic.xsd">
+    <pat:Patient>
+        <pat:patient-id>101</pat:patient-id>
+        <pat:name>Bob</pat:name>
+        <pat:dob>1990-05-04</pat:dob>
+        <pat:treatments>
+            <pat:treatment>
+                <treat:provider-id>1001</treat:provider-id>
+                <treat:Diagnosis>cancer</treat:Diagnosis>
+                <treat:Radiology>
+                    <treat:date>2012-04-04</treat:date>
+                    <treat:date>2006-05-04</treat:date>
+                    <treat:radiologist>Jean</treat:radiologist>
+                    <treat:diagnosis>cancer</treat:diagnosis>
+                </treat:Radiology>
+            </pat:treatment>
+            
+        </pat:treatments>
+    </pat:Patient>
+    <pat:Patient>
+        <pat:patient-id>102</pat:patient-id>
+        <pat:name>Edward</pat:name>
+        <pat:dob>1995-10-14</pat:dob>
+        <pat:treatments>
+            <pat:treatment>
+                <treat:provider-id>1002</treat:provider-id>
+                <treat:Diagnosis>migraine</treat:Diagnosis>
+                <treat:drug-treatment>
+                    <treat:name>relpx</treat:name>
+                    <treat:diagnosis>migraine</treat:diagnosis>
+                    <treat:prescribingPhysician>Carie</treat:prescribingPhysician>
+                    <treat:dosage>35.0</treat:dosage>
+                </treat:drug-treatment>
+            </pat:treatment>
+            
+        </pat:treatments>
+    </pat:Patient>
+    <pat:Patient>
+        <pat:patient-id>103</pat:patient-id>
+        <pat:name>Rebecca</pat:name>
+        <pat:dob>1995-12-24</pat:dob>
+        <pat:treatments>
+            <pat:treatment>
+                <treat:provider-id>1003</treat:provider-id>
+                <treat:Diagnosis>AIDS</treat:Diagnosis>
+                <treat:Radiology>
+                    <treat:date>2011-04-04</treat:date>
+                    <treat:date>2011-05-04</treat:date>
+                    <treat:radiologist>Trent</treat:radiologist>
+                    <treat:diagnosis>AIDS</treat:diagnosis>
+                </treat:Radiology>
+            </pat:treatment>
+            
+        </pat:treatments>
+    </pat:Patient>
+    <pat:Patient>
+        <pat:patient-id>104</pat:patient-id>
+        <pat:name>John</pat:name>
+        <pat:dob>1988-11-11</pat:dob>
+        <pat:treatments>
+            <pat:treatment>
+                <treat:provider-id>1001</treat:provider-id>
+                <treat:Diagnosis>Throat Infection</treat:Diagnosis>
+                <treat:drug-treatment>
+                    <treat:name>Enthromycin</treat:name>
+                    <treat:diagnosis>Throat Infection</treat:diagnosis>
+                    <treat:prescribingPhysician>Marlo</treat:prescribingPhysician>
+                    <treat:dosage>25.5</treat:dosage>
+                </treat:drug-treatment>
+            </pat:treatment>
+            
+        </pat:treatments>
+    </pat:Patient>
+    <pat:Patient>
+        <pat:patient-id>105</pat:patient-id>
+        <pat:name>Chris</pat:name>
+        <pat:dob>1990-01-25</pat:dob>
+        <pat:treatments>
+            <pat:treatment>
+                <treat:provider-id>1002</treat:provider-id>
+                <treat:Diagnosis>Cardiac Arrest</treat:Diagnosis>
+                <treat:Surgery>
+                    <treat:date>2012-10-02</treat:date>
+                    <treat:diagnosis>Cardiac Arrest</treat:diagnosis>
+                    <treat:surgeon>Henry</treat:surgeon>
+                </treat:Surgery>
+            </pat:treatment>
+            
+        </pat:treatments>
+    </pat:Patient>
+    
+    <prov:Provider>
+        <prov:provider-id>1001</prov:provider-id>
+        <prov:name>Jane</prov:name>
+        <prov:specialization>Radiology</prov:specialization>
+    </prov:Provider>
+    <prov:Provider>
+        <prov:provider-id>1002</prov:provider-id>
+        <prov:name>Irving</prov:name>
+        <prov:specialization>Internist</prov:specialization>
+    </prov:Provider>
+    <prov:Provider>
+        <prov:provider-id>1003</prov:provider-id>
+        <prov:name>Mathew</prov:name>
+        <prov:specialization>Surgery</prov:specialization>
+    </prov:Provider>
+</clinic:Clinic>

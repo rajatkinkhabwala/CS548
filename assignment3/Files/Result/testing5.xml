@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+   <result>
+      <DrugName>relpx</DrugName>
+      <Patients>
+         <PatientDrugInfo>
+            <PatientName>Edward</PatientName>
+            <TreatmentInfo>
+               <PatientTreatmentInfo>
+                  <DrugName>relpx</DrugName>
+                  <PhysicianName>Carie</PhysicianName>
+                  <Diagnosis>migraine</Diagnosis>
+                  <Dosage>35.0</Dosage>
+               </PatientTreatmentInfo>
+            </TreatmentInfo>
+            <Provider>1002</Provider>
+         </PatientDrugInfo>
+      </Patients>
+   </result>
+   <result>
+      <DrugName>Enthromycin</DrugName>
+      <Patients>
+         <PatientDrugInfo>
+            <PatientName>John</PatientName>
+            <TreatmentInfo>
+               <PatientTreatmentInfo>
+                  <DrugName>Enthromycin</DrugName>
+                  <PhysicianName>Marlo</PhysicianName>
+                  <Diagnosis>Throat Infection</Diagnosis>
+                  <Dosage>25.5</Dosage>
+               </PatientTreatmentInfo>
+            </TreatmentInfo>
+            <Provider>1001</Provider>
+         </PatientDrugInfo>
+      </Patients>
+   </result>
+</function>

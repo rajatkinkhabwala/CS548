@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+   <PatientID>101</PatientID>
+   <Treatment>
+      <PatientTreatmentInfo>
+         <Date>
+            <DateofTreatment>2012-04-04</DateofTreatment>
+            <DateofTreatment>2006-05-04</DateofTreatment>
+         </Date>
+         <RadiologistName>Jean</RadiologistName>
+         <Diagnosis>cancer</Diagnosis>
+      </PatientTreatmentInfo>
+   </Treatment>
+   <Provider>1001</Provider>
+</result>
+<result>
+   <PatientID>102</PatientID>
+   <Treatment>
+      <PatientTreatmentInfo>
+         <DrugName>relpx</DrugName>
+         <PhysicianName>Carie</PhysicianName>
+         <Diagnosis>migraine</Diagnosis>
+         <Dosage>35.0</Dosage>
+      </PatientTreatmentInfo>
+   </Treatment>
+   <Provider>1002</Provider>
+</result>
+<result>
+   <PatientID>103</PatientID>
+   <Treatment>
+      <PatientTreatmentInfo>
+         <Date>
+            <DateofTreatment>2011-04-04</DateofTreatment>
+            <DateofTreatment>2011-05-04</DateofTreatment>
+         </Date>
+         <RadiologistName>Trent</RadiologistName>
+         <Diagnosis>AIDS</Diagnosis>
+      </PatientTreatmentInfo>
+   </Treatment>
+   <Provider>1003</Provider>
+</result>
+<result>
+   <PatientID>104</PatientID>
+   <Treatment>
+      <PatientTreatmentInfo>
+         <DrugName>Enthromycin</DrugName>
+         <PhysicianName>Marlo</PhysicianName>
+         <Diagnosis>Throat Infection</Diagnosis>
+         <Dosage>25.5</Dosage>
+      </PatientTreatmentInfo>
+   </Treatment>
+   <Provider>1001</Provider>
+</result>
+<result>
+   <PatientID>105</PatientID>
+   <Treatment>
+      <PatientTreatmentInfo>
+         <DateofSurgery>2012-10-02</DateofSurgery>
+         <SurgeonName>Henry</SurgeonName>
+         <Diagnosis>Cardiac Arrest</Diagnosis>
+      </PatientTreatmentInfo>
+   </Treatment>
+   <Provider>1002</Provider>
+</result>
