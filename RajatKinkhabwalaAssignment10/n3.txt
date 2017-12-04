@@ -1,0 +1,76 @@
+@prefix clinic: <http://edu.stevens.cs548/clinic#/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+clinic:Provider a owl:Class ;
+    rdfs:subClassOf owl:Clinic .
+
+clinic:Patient a owl:Class ;
+    rdfs:subClassOf owl:Clinic .
+
+clinic:Treatment a owl:Class ;
+    rdfs:subClassOf owl:Clinic .
+
+clinic:DrugTreatment rdfs:subClassOf clinic:Treatment .
+
+clinic:Internists a clinic:Provider .
+
+clinic:Surgery rdfs:subClassOf clinic:Treatment .
+
+clinic:Surgeons a clinic:Provider .
+
+clinic:Radiology rdfs:subClassOf clinic:Treatment .
+
+clinic:Radiologists a clinic:Provider .
+
+clinic:PatientId a rdf:Property ;
+    rdfs:domain clinic:Patient ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:FunctionalProperty clinic:Patient ;
+            owl:inverseFunctionalProperty clinic:Patient ] .
+
+clinic:RadiologistProvided a owl:Class ;
+    rdfs:subClassOf clinic:Treatment ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:HasValue clinic:Radiologists ;
+            owl:OnProperty clinic:ProvidedBy ] .
+
+clinic:RadiologyPatient a owl:Class ;
+    rdfs:subClassOf clinic:Patient ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:HasValue clinic:Radiology ;
+            owl:OnProperty clinic:InverseOfReceivedBy ] .
+
+clinic:InverseOfReceivedBy a owl:ObjectProperty ;
+    owl:inverseOf clinic:ReceivedBy .
+
+clinic:ProvidedBy a owl:ObjectProperty ;
+    rdfs:domain clinic:Treatment ;
+    rdfs:range clinic:Provider .
+
+clinic:ReceivedBy a owl:ObjectProperty ;
+    rdfs:domain clinic:Treatment ;
+    rdfs:range clinic:Patient .
+
+clinic:Stewie rdf:type clinic:RadiologyPatient .
+
+clinic:Jake rdf:type clinic:RadiologyPatient .
+
+clinic:Jack a clinic:Radiologists .
+
+clinic:Martha a clinic:Radiologists .
+
+clinic:RadiologyTreatment1 a clinic:Radiology .
+
+clinic:RadiologyTreatment2 a clinic:Radiology .
+
+clinic:RadiologyTreatment1 clinic:ProvidedBy clinic:Martha .
+
+clinic:RadiologyTreatment2 clinic:ProvidedBy clinic:Jack .
+
+clinic:RadiologyTreatment1 clinic:ReceivedBy clinic:Stewie .
+
+clinic:RadiologyTreatment2 clinic:ReceivedBy clinic:Jake .
